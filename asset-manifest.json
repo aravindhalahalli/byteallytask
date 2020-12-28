@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/byteallytask/static/css/main.99b22611.chunk.css",
+    "main.css": "/byteallytask/static/css/main.e9174084.chunk.css",
     "main.js": "/byteallytask/static/js/main.bd930bee.chunk.js",
     "main.js.map": "/byteallytask/static/js/main.bd930bee.chunk.js.map",
     "runtime-main.js": "/byteallytask/static/js/runtime-main.00256af0.js",
@@ -12,14 +12,14 @@
     "static/js/3.13ee8705.chunk.js.map": "/byteallytask/static/js/3.13ee8705.chunk.js.map",
     "index.html": "/byteallytask/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/byteallytask/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.99b22611.chunk.css.map": "/byteallytask/static/css/main.99b22611.chunk.css.map",
+    "static/css/main.e9174084.chunk.css.map": "/byteallytask/static/css/main.e9174084.chunk.css.map",
     "static/js/2.8fbea983.chunk.js.LICENSE.txt": "/byteallytask/static/js/2.8fbea983.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.00256af0.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.8fbea983.chunk.js",
-    "static/css/main.99b22611.chunk.css",
+    "static/css/main.e9174084.chunk.css",
     "static/js/main.bd930bee.chunk.js"
   ]
 }
