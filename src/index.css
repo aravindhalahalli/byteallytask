@@ -9,10 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 h2 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 h4 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -79,6 +79,9 @@ code {
   color: black;
   background-color: #0e153a;
   color: white;
+}
+.user-info h2{
+  font-size: 24px !important;
 }
 
 .header {
