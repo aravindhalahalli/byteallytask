@@ -8,7 +8,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+h2 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -24,7 +29,7 @@ code {
 }
 
 .brand {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
   font-size: 25px;
   font-weight: bold;
@@ -40,7 +45,7 @@ code {
   color: white;
 }
 
-.container {
+.container_ {
   display: flex;
   flex-direction: row;
   justify-content: center;

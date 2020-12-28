@@ -60,7 +60,7 @@ const UserList = () => {
         </h1>
       </div>
       {/* main body with logic */}
-      <div className="container">
+      <div className="container_">
         {searchValue.length > 0
           ? localVar.map((data, idx) => {
               return <UserCard {...data} key={idx} />;
