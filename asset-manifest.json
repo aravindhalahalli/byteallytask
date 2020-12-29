@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/byteallytask/static/css/main.ce2cd880.chunk.css",
-    "main.js": "/byteallytask/static/js/main.5b944d36.chunk.js",
-    "main.js.map": "/byteallytask/static/js/main.5b944d36.chunk.js.map",
+    "main.js": "/byteallytask/static/js/main.8c63a4d2.chunk.js",
+    "main.js.map": "/byteallytask/static/js/main.8c63a4d2.chunk.js.map",
     "runtime-main.js": "/byteallytask/static/js/runtime-main.5e03b5e8.js",
     "runtime-main.js.map": "/byteallytask/static/js/runtime-main.5e03b5e8.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/byteallytask/static/css/2.20aa2d7b.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.5d4ac31f.chunk.js",
     "static/css/main.ce2cd880.chunk.css",
-    "static/js/main.5b944d36.chunk.js"
+    "static/js/main.8c63a4d2.chunk.js"
   ]
 }
