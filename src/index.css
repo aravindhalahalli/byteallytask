@@ -136,6 +136,24 @@ code {
 .randomuser {
   height: 12px;
 }
+.pagination.pagination {
+  display: flex;
+  padding-left: 0px;
+  list-style: none;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 0px auto;
+}
+.pagination.pagination li {
+  padding: 5px;
+  border: 1px solid darkslategray;
+  text-transform: capitalize;
+  background-color: #0e153a;
+}
+.pagination.pagination li:active {
+  color: black;
+  background-color: white;
+}
 
 @media (max-width: 425px) {
   .brand {
@@ -147,7 +165,7 @@ code {
   .header-heading {
     padding: 60px 0px 0px;
   }
-  .header-heading h1 i{
+  .header-heading h1 i {
     font-size: 24px;
   }
 }

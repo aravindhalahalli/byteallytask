@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import UserCard from "./UserCard";
+import Pagination from "react-js-pagination";
 
 //fetch random user data with an API
 const fetchRandomData = () => {
@@ -19,6 +20,18 @@ const UserList = () => {
   const [userInfos, setUserInfos] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [localVar, setlocalVar] = useState([]);
+
+  const usersPerPage = 9;
+  const [activePage, setCurrentPage] = useState(1);
+
+  const indexOfLastUser = activePage * usersPerPage;
+  const indexOfFirstTodo = indexOfLastUser - usersPerPage;
+  const currentUsers = userInfos.slice(indexOfFirstTodo, indexOfLastUser);
+
+  const handlePageChange = (pageNumber) => {
+    console.log(`active page is ${pageNumber}`);
+    setCurrentPage(pageNumber);
+  };
 
   useEffect(() => {
     fetchRandomData().then((data) => {
@@ -65,10 +78,24 @@ const UserList = () => {
           ? localVar.map((data, idx) => {
               return <UserCard {...data} key={idx} />;
             })
-          : userInfos.map((userInfo, idx) => {
+          : currentUsers.map((userInfo, idx) => {
               // console.log(userInfo);
               return <UserCard {...userInfo} key={idx} />;
             })}
+      </div>
+
+      <div className="pagination">
+        <Pagination
+          prevPageText="prev"
+          nextPageText="next"
+          firstPageText="first"
+          lastPageText="last"
+          activePage={activePage}
+          itemsCountPerPage={10}
+          pageRangeDisplayed={5}
+          totalItemsCount={userInfos.length}
+          onChange={handlePageChange}
+        />
       </div>
       {/* footer */}
       <footer className="footer">
