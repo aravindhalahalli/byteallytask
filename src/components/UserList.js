@@ -6,7 +6,7 @@ import Pagination from "react-js-pagination";
 //fetch random user data with an API
 const fetchRandomData = () => {
   return axios
-    .get(`https://randomuser.me/api/?results=100`)
+    .get(`https://randomuser.me/api/?results=5000`)
     .then(({ data }) => {
       console.log("userInfoData", data);
       return data;
@@ -37,7 +37,7 @@ const UserList = () => {
     fetchRandomData().then((data) => {
       if (data === undefined) return;
       setUserInfos(data.results);
-      localStorage.setItem("userInfo", JSON.stringify(data.results));
+      // localStorage.setItem("userInfo", JSON.stringify(data.results));
     });
   }, []);
 
@@ -46,7 +46,7 @@ const UserList = () => {
       (data) => !data.name.first.toLowerCase().search(searchValue)
     );
     setlocalVar(filterData);
-    localStorage.setItem("searchValue", JSON.stringify(filterData));
+    // localStorage.setItem("searchValue", JSON.stringify(filterData));
     console.log("filterdata", filterData);
   }, [searchValue]);
   return (
