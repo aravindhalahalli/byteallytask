@@ -26,6 +26,9 @@ code {
   background-color: #0e153a;
   margin-bottom: 20px;
   color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .brand {
@@ -43,6 +46,10 @@ code {
   background-color: #0e153a;
   border: 0.5px solid #124faa;
   color: white;
+}
+.header-heading {
+  text-align: center;
+  padding: 90px 0px 0px;
 }
 
 .container_ {
@@ -80,7 +87,7 @@ code {
   background-color: #0e153a;
   color: white;
 }
-.user-info h2{
+.user-info h2 {
   font-size: 24px !important;
 }
 
@@ -136,5 +143,11 @@ code {
   }
   .search {
     padding: 5px 0px 5px 5px;
+  }
+  .header-heading {
+    padding: 60px 0px 0px;
+  }
+  .header-heading h1 i{
+    font-size: 24px;
   }
 }

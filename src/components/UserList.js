@@ -54,7 +54,7 @@ const UserList = () => {
         </form>
       </div>
 
-      <div style={{ textAlign: "center" }}>
+      <div className="header-heading">
         <h1>
           <i>User Details Zone</i>
         </h1>
